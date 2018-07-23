@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="datagrid"><table>
+<thead><tr><th>last_date</th><th>transaction_type</th><th>shares_traded</th><th>last_price</th><th>shares_held</th></tr></thead>
+<tbody>
+{% for trade in trades %}
+    <tr><td>{{trade['last_date']}}</td>
+        <td>{{trade['transaction_type']}}</td>
+        <td>{{trade['shares_traded']}}</td>
+        <td>{{trade['last_price']}}</td>
+        <td>{{trade['shares_held']}}</td></tr>
+{% endfor %}
+</tbody>
+</table></div>
+</body>
+</html>

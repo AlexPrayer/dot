@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/{{share_code}}/insider" method="GET">
+  <input type="submit" value="Watch trades for this share">
+</form>
+
+
+<div class="datagrid"><table>
+<thead><tr><th>date</th><th>open</th><th>high</th><th>low</th><th>close/last</th><th>volume</th></tr></thead>
+<tbody>
+{% for stock in stocks %}
+    <tr><td>{{stock['date']}}</td><td>{{stock['open']}}</td><td>{{stock['high']}}</td><td>{{stock['low']}}</td><td>{{stock['close_last']}}</td><td>{{stock['volume']}}</td></tr>
+{% endfor %}
+</tbody>
+</table></div>
+</body>
+</html>
