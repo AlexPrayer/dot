@@ -48,9 +48,9 @@ if __name__ == '__main__':
     arg = input('yes/no\n')
 
     if arg == 'yes':
+	    print('How many workers should parse the data?')
         caller = Caller()
         caller.clear_tables()
-        print('How many workers should parse the data?')
         num_proc = int(input())
         try:
             assert (isinstance(num_proc, int))
@@ -61,5 +61,3 @@ if __name__ == '__main__':
         application = Application()
     else:
         raise ValueError("Input should be \'yes\' or \'no\'.")
-
-    application = Application()

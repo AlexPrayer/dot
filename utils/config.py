@@ -2,7 +2,7 @@ config = {
     'BASE_URL': 'https://www.nasdaq.com/symbol/',
     'SHARES_SUFFIX': '/historical',
     'TRADES_SUFFIX': '/insider-trades',
-    'SHARES_FILENAME': 'D:\###PROJECTS\dot\shares.txt',
+    'SHARES_FILENAME': 'D:\dot\shares.txt',
     'PAGE_SUFFIX': '?page=',
     'PAGE_COUNT_LIMIT_TO_PARSE': 10,
 }
